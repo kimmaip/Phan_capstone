@@ -69,7 +69,7 @@ ggplot(flim, aes(mut, cyto))+
   geom_jitter(width=0.1, color="purple")+
   labs(title= "Metabolic Activity in Cells with a Point Mutation in DNMT1", x="Mutation Present", y= "Fraction of Bound NADH")
 ```
-![Image](src)
+![Image](Task-8.png)
 
 ## Task 9: Write and Perform Monte Carlo Analysis 
 
@@ -103,7 +103,7 @@ pval <- replicate(
 pwr.pct <- sum(pval<0.05)/sims*100
 paste(pwr.pct, sep="", "% power. Change 'n' in your initializer for higher or lower power. ")
 ```
-![Image](src)
+![Image](Task-9.png)
 
 To have a 12% risk of obtaining a type II error, given the parameters, I would need at least an n of 6 independent replicates for each of my explantory groups.
 
